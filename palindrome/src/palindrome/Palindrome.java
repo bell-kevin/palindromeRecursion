@@ -11,6 +11,28 @@ import java.util.*;
 
 public class Palindrome {
 
+    private static String getReverse(Scanner scan) {
+        String nextWord;
+        //recursive here
+        nextWord = scan.next();
+        if (scan.hasNext()) {                             //stopping condition
+            nextWord = getReverse(scan) + " " + nextWord; //base case
+        } // end if statement
+        return nextWord;
+    } //end method getReverse
+
+    public static String getRearrange(String message) {
+        String sentence = message;
+        String[] splitSentence = sentence.split(" ");
+        // using a StringBuilder for performance improvements
+        StringBuilder reversedSentence = new StringBuilder();
+        // append to StringBuilder in reverse order.
+        for (int i = splitSentence.length - 1; i >= 0; i--) {
+            reversedSentence.append(splitSentence[i]).append(" ");
+        } // end for loop
+        return reversedSentence.toString();
+    } // end method getRearrange
+
     public static boolean isPalindrome(String phrase) {
         //converts everything to lowercase and leaves only letters and numbers in the string
         phrase = phrase.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
@@ -35,20 +57,22 @@ public class Palindrome {
         System.out.println("Module 1 Competency Palindrome by Kevin Bell \n");
         System.out.printf("%16s", "Enter a phrase: ");
         String str = computerKeyboardInput.nextLine();   //Input the string
+        Scanner scan = new Scanner(str);
         //Check whether palindrome or not
         if (isPalindrome(str)) {
             //print the clean phrase
             System.out.printf("%16s", "Clean phrase: ");
             System.out.println(str);
             System.out.printf("%16s", "Reverse phrase: ");
-            System.out.println(str);
+            System.out.println(getReverse(scan));
             System.out.println("This IS a palindrome");
         } else {
             //print the clean phrase
             System.out.printf("%16s", "Clean phrase: ");
             System.out.println(str);
             System.out.printf("%16s", "Reverse phrase: ");
-            System.out.println(str);
+            //getReverse(scan);
+            System.out.println(getReverse(scan));
             System.out.println("This is NOT a palindrome");
         } // end if/else condition
     } // end main method
