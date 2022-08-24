@@ -56,7 +56,7 @@ public class Palindrome {
         Scanner computerKeyboardInput = new Scanner(System.in);
         System.out.println("Module 1 Competency Palindrome by Kevin Bell \n");
         System.out.printf("%16s", "Enter a phrase: ");
-        String str = computerKeyboardInput.nextLine();   //Input the string
+        String str = computerKeyboardInput.nextLine().toLowerCase();   //Input the string
         Scanner scan = new Scanner(str);
         String message = str;
         //Check whether palindrome or not
