@@ -6,7 +6,17 @@ In Competency Exercises, you demonstrate your skill and ability to use the progr
 
 You will need to write unit tests to validate the results in this program. Be sure to use at least 5 data sets, and take screenshots of successful results.     
 
-Module 1 Competency Project: Palindrome  A palindrome is a word or phrase that is the same forwards and backwards. For example, "racecar" has the same letters from the left to the right, and from the right to the left. In this project, you will determine if some user input is a palindrome by reversing the input into a new variable, using recursion, and compare the original input variable with the reversed input variable -- if they are the same, the input is a palindrome.  A word palindrome is straightforward, just reverse the string. A phrase palindrome contains spaces -- the spaces are not included when testing for a palindrome. The phrase "was it a rat i saw" is an example of this. It is a palindrome, after you remove all the spaces. When you get the user input, remove spaces from the string. Make all letters lowercase -- an 'X' will not match 'x' when testing if strings are equal. Reverse the string. Compare the variables holding the input phrase and the reversed phrase (no spaces in either) to find out if the input is a palindrome. Note that the clean phrase, after removing spaces, is displayed, then the reversed phrase below it, for verification. Make sure the colons line up, so the variables line up. Then display the result, that it IS or IS NOT a palindrome.  There must be a recursive method to reverse the string and return that reversed string.  Run the project 4 times, with a word that is a palindrome, a word that is not a palindrome, a phrase that is a palindrome, and a phrase that is not a palindrome, and take a screenshot after each execution, like the sample sessions above.     
+Module 1 Competency Project: 
+
+Palindrome  
+
+A palindrome is a word or phrase that is the same forwards and backwards. For example, "racecar" has the same letters from the left to the right, and from the right to the left. In this project, you will determine if some user input is a palindrome by reversing the input into a new variable, using recursion, and compare the original input variable with the reversed input variable -- if they are the same, the input is a palindrome.  
+
+A word palindrome is straightforward, just reverse the string. A phrase palindrome contains spaces -- the spaces are not included when testing for a palindrome. The phrase "was it a rat i saw" is an example of this. It is a palindrome, after you remove all the spaces. When you get the user input, remove spaces from the string. Make all letters lowercase -- an 'X' will not match 'x' when testing if strings are equal. Reverse the string. Compare the variables holding the input phrase and the reversed phrase (no spaces in either) to find out if the input is a palindrome. 
+
+Note that the clean phrase, after removing spaces, is displayed, then the reversed phrase below it, for verification. Make sure the colons line up, so the variables line up. Then display the result, that it IS or IS NOT a palindrome.  There must be a recursive method to reverse the string and return that reversed string.  
+
+Run the project 4 times, with a word that is a palindrome, a word that is not a palindrome, a phrase that is a palindrome, and a phrase that is not a palindrome, and take a screenshot after each execution, like the sample sessions above.     
 
 Submission: the specified screenshots (of execution of the program and successful unit tests) and the root folder for the project     
 
